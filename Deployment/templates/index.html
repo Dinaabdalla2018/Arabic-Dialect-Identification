@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arabic Dialect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <img src="https://penultimateword.com/wp-content/uploads/2014/03/People-speaking-in-different-dialects.jpg" >
+    
+    <form action="Predict"  method="post">
+        <br>
+        <label for="_name"><b>Enter your text</b></label>
+        <br>
+        <textarea name="name_input" rows="3" cols="50" placeholder="enter your Text here"></textarea>
+        <br><br>
+        <label for="_name"><b>Choose The Model</b></label>
+        <br>
+        <select name= "model">
+              <option value="">Please choose an Model</option>
+              <option value="SVM">Machine Learning Model </option>
+              <option value="DL">Deep Learning Model</option>
+        </select>
+           
+        <br>
+        <br>
+        <input type="submit" value="Predict my dialect" id="Predict" color= green>
+        <br>
+        {{prediction}}<br>
+    </form>
+</body>
+</html>
