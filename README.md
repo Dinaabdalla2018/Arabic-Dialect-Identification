@@ -18,3 +18,4 @@ The process of computationally identifying the language of a given text is consi
 
 ### run app.py
 open command line set path of project Then write **flask run**
+![alt text](https://github.com/Dinaabdalla2018/Arabic-Dialect-Identification/blob/main/photo/photo_cmd.PNG)
